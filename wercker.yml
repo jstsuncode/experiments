@@ -8,6 +8,7 @@ build:
           python test_student.py
     - script:
         name: test with code coverage
+        code: |
           cd school
           coverage run test_student.py
           coverage report
