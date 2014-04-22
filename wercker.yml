@@ -1,4 +1,4 @@
-box: wercker/default
+box: nuzz/sightmachine
 build:
   steps:
     - script:
