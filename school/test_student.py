@@ -46,7 +46,7 @@ class StudentTest(unittest.TestCase):
         print "m=" + str(m_gpa)
         print "b=" + str(b_gpa)
 
-        assert((j_gpa > 3.67) and (j_gpa < 3.67))
+        assert((j_gpa > 3.66) and (j_gpa < 3.67))
         assert(m_gpa > 3.16 and m_gpa < 3.17) # fails
         assert(b_gpa < 2.01 and b_gpa > 1.99)
 
