@@ -2,11 +2,6 @@ box: nuzz/sightmachine
 build:
   steps:
     - script:
-        name: Export environment vars
-        code: |
-          export TRAVIS_BRANCH=$WERCKER_GIT_BRANCH
-          echo $TRAVIS_BRANCH
-    - script:
         name: test with code coverage
         code: |
           nosetests --with-coverage
@@ -14,5 +9,7 @@ build:
     - script:
         name: Coveralls.io
         code: |
+          export CIRCLE_BRANCH=$WERCKER_GIT_BRANCH
+          echo $CIRCLE_BRANCH
           coveralls debug
           coveralls
