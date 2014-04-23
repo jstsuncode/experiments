@@ -5,6 +5,7 @@ build:
         name: Export environment vars
         code: |
           export TRAVIS_BRANCH=$WERCKER_GIT_BRANCH
+          echo $TRAVIS_BRANCH
     - script:
         name: test with code coverage
         code: |
