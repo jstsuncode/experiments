@@ -6,11 +6,11 @@ build:
     #- pip-install:
     #    requirements_file: ""
     #    packages_list: "coveralls"
-    - script:
-        name: test
-        code: |
-          cd school
-          python test_student.py
+    #- script:
+    #    name: test
+    #    code: |
+    #      cd school
+    #      python test_student.py
     - script:
         name: test with code coverage
         code: |
