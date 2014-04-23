@@ -1,4 +1,5 @@
 class Subject:
-	def __init__(self, name):
-		self.name = name
+    """ Represents a Subject class """
+    def __init__(self, name):
+        self.name = name
 

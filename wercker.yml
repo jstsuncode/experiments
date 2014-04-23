@@ -16,6 +16,5 @@ build:
     - script:
         name: Coveralls.io
         code: |
-          pip install coveralls
-          nosetests --with-coverage --cover-package=school          
+          nosetests --with-coverage
           coveralls
