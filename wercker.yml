@@ -1,8 +1,10 @@
 box: nuzz/sightmachine
 steps:
-  - wercker/pip-install@0.0.6
+  - wercker/set_coveralls_env@0.0.1
 build:
   steps:
+    - set_coveralls_env:
+        name: Export environment vars
     - script:
         name: test with code coverage
         code: |
