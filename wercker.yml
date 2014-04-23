@@ -14,4 +14,5 @@ build:
     - script:
         name: Coveralls.io
         code: |
+          coveralls debug
           coveralls
