@@ -1,6 +1,7 @@
 import unittest
 from Student import Student
 from Subject import Subject
+from decimal import *
 
 class StudentTest(unittest.TestCase):
 
@@ -37,9 +38,17 @@ class StudentTest(unittest.TestCase):
         b.setGrade(cmu, 'C')
         b.setGrade(cpe, 'A')
 
-        print j.getGPA()
-        print m.getGPA()
-        print b.getGPA()
+        j_gpa = Decimal(j.getGPA())
+        m_gpa = Decimal(m.getGPA())
+        b_gpa = Decimal(b.getGPA())
+
+        print "j=" + str(j_gpa)
+        print "m=" + str(m_gpa)
+        print "b=" + str(b_gpa)
+
+        assert((j_gpa > 3.66) and (j_gpa < 3.67))
+        assert(m_gpa > 3.17 and m_gpa < 3.17) # fails
+        assert(b_gpa < 2.01 and b_gpa > 1.99)
 
 if __name__ == '__main__':
     unittest.main()

@@ -18,8 +18,8 @@ build:
        #  cd school
        #  coverage run test_student.py
        #  coverage report
-    - script:
-        name: Coveralls.io
-        code: |
-          nosetests --with-coverage
-          coveralls
+    #- script:
+    #    name: Coveralls.io
+    #    code: |
+    #      nosetests --with-coverage
+    #      coveralls
