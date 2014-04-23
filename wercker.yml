@@ -9,6 +9,7 @@ build:
     - script:
         name: test with code coverage
         code: |
-          cd school
-          coverage run test_student.py
-          coverage report
+          nosetests --with-coverage --cover-package=school
+       #  cd school
+       #  coverage run test_student.py
+       #  coverage report
