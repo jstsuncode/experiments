@@ -3,9 +3,9 @@ steps:
   - wercker/pip-install@0.0.6
 build:
   steps:
-    - pip-install:
-        requirements_file: ""
-        packages_list: "coveralls"
+    #- pip-install:
+    #    requirements_file: ""
+    #    packages_list: "coveralls"
     - script:
         name: test
         code: |
